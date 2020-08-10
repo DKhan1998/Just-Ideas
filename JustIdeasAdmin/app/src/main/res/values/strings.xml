@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">JustIdeas - Admin</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="tab_text_1">Orders</string>
+    <string name="tab_text_2">Users</string>
+    <string name="tab_text_3">Products</string>
+    <string name="children">Children</string>
+</resources>

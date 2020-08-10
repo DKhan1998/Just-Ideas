@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmOrderActivity"
+    android:background="@color/colorSecondaryLight">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorSecondary">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">]
+
+                <TextView
+                    android:id="@+id/back_delivery_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:textColor="@color/colorPrimaryLight"
+                    android:textSize="18dp"
+                    android:layout_alignParentStart="true"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery Details"
+                    android:textColor="@color/colorPrimaryLight"
+                    android:textSize="10pt"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_centerHorizontal="true"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txt"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/currentLocationBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Find Address"
+            android:drawableLeft="@drawable/ic_location"
+            android:drawableTint="@color/colorSecondaryDark"
+            android:paddingStart="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_main"/>
+
+        <EditText
+            android:id="@+id/user_dvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2pt"
+            android:hint="Full Name"
+            android:inputType="text"
+            android:textColor="@color/colorPrimaryLight"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/user_dvPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2pt"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:textColor="@color/colorPrimaryLight"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/user_dvAddressL1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2pt"
+            android:hint="Address Line 1"
+            android:inputType="text"
+            android:textColor="@color/colorPrimaryLight"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/user_dvAddressL2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2pt"
+            android:hint="Address Line 2"
+            android:inputType="text"
+            android:textColor="@color/colorPrimaryLight"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/user_dvPostcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2pt"
+            android:hint="Postcode"
+            android:inputType="text"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryLight"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/user_dvTown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2pt"
+            android:hint="Town"
+            android:inputType="text"
+            android:textColor="@color/colorPrimaryLight"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/user_dvCounty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2pt"
+            android:hint="County"
+            android:inputType="text"
+            android:textColor="@color/colorPrimaryLight"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="8pt" />
+
+
+        <EditText
+            android:id="@+id/user_dvCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2pt"
+            android:hint="Country"
+            android:inputType="text"
+            android:textColor="@color/colorPrimaryLight"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="8pt" />
+
+
+        <Button
+            android:id="@+id/confirm_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10pt"
+            android:background="@drawable/buttons"
+            android:text="Confirm"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp"
+            android:elevation="5pt"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

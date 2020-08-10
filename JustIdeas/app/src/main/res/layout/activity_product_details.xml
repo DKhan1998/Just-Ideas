@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".ProductDetailsActivity"
+    android:background="@color/colorSecondaryLight"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_products"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorSecondary">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/back_settings_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Back"
+                        android:textColor="@color/colorPrimaryLight"
+                        android:textSize="18sp"
+                        android:layout_alignParentStart="true"
+                        />
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ImageView
+            android:id="@+id/productImg_dtl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="350dp"
+            android:scaleType="fitCenter"
+            android:layout_below="@+id/app_bar_products"
+            android:background="@color/colorPrimary"
+            android:contentDescription="Product Images are loaded here"
+            />
+
+        <TextView
+            android:id="@+id/productName_dtl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productImg_dtl"
+            android:textAlignment="viewStart"
+            android:textSize="25sp"
+            android:text="Product Title"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:id="@+id/deadButton"
+            style="@android:style/ButtonBar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="5pt"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="5pt"
+            android:enabled="false"
+            android:layout_below="@+id/productName_dtl"/>
+
+        <TextView
+            android:id="@+id/productCategory_dtl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deadButton"
+            android:textAlignment="viewStart"
+            android:textSize="15sp"
+            android:text="Product Category"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <com.rey.material.widget.LinearLayout
+            android:id="@+id/prodcutPrice_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productCategory_dtl"
+            android:layout_centerVertical="true"
+            android:textAlignment="center"
+            android:layout_marginTop="5pt"
+            >
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="@string/priceTag"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:layout_marginStart="5pt"
+                />
+
+            <TextView
+                android:id="@+id/productPrice_dtl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productName_dtl"
+                android:textAlignment="viewStart"
+                android:textSize="20sp"
+                android:text="Product Price"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginEnd="5pt"
+                />
+
+        </com.rey.material.widget.LinearLayout>
+
+        <com.rey.material.widget.LinearLayout
+            android:id="@+id/spinner_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/prodcutPrice_Layout"
+            android:layout_centerVertical="true"
+            android:textAlignment="center"
+            android:layout_marginTop="5pt"
+            >
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/color_spinner"
+                android:layout_width="wrap_content"
+                android:minWidth="80pt"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:scrollbarStyle="outsideOverlay"
+                app:arrowTint="@color/colorPrimary"
+                android:textAllCaps="true"
+                android:textColorHint="@color/colorPrimary"
+                android:textColor="@color/colorPrimaryLight"
+                android:backgroundTint="@color/colorSecondaryLight"
+                />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:text=" | "
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp"
+                />
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/size_spinner"
+                android:layout_width="wrap_content"
+                android:minWidth="80pt"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColorHint="@color/colorPrimary"
+                android:textColor="@color/colorPrimaryLight"
+                app:arrowTint="@color/colorPrimary"
+                android:backgroundTint="@color/colorSecondaryLight"
+                />
+        </com.rey.material.widget.LinearLayout>
+
+        <com.rey.material.widget.LinearLayout
+            android:id="@+id/basketLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="25pt"
+            android:layout_below="@+id/spinner_Layout"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <Button
+                android:id="@+id/basketBtn"
+                android:layout_width="130pt"
+                android:layout_height="match_parent"
+                android:minWidth="100pt"
+                android:textAlignment="center"
+                android:text="ADD TO BAG"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:background="@drawable/buttons"
+                android:layout_marginEnd="10dp"
+                />
+
+            <EditText
+                android:id="@+id/productQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </com.rey.material.widget.LinearLayout>
+
+        <TextView
+            android:id="@+id/returnsPolicyLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/basketLayout"
+            android:text="Delivery &amp; Returns, T&amp;C's Apply"
+            android:textColor="@color/colorPrimary"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10pt"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt"
+            android:layout_marginBottom="5pt"
+            />
+
+        <Button
+            android:id="@+id/deadButton1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/returnsPolicyLink"
+            style="@android:style/ButtonBar"
+            android:enabled="false"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="5pt"
+            />
+
+        <TextView
+            android:id="@+id/productDetailsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/returnsPolicyLink"
+            android:text="Product Details"
+            android:textColor="@color/colorPrimary"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10pt"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt"
+            android:layout_marginBottom="5pt"
+            />
+
+        <Button
+            android:id="@+id/deadButton2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/productDetailsTitle"
+            style="@android:style/ButtonBar"
+            android:enabled="false"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="5pt"
+            />
+        <TextView
+            android:id="@+id/productDetailsContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productDetailsTitle"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:layout_marginTop="0dp"
+            android:layout_margin="10dp"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>

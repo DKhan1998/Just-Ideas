@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sizes_array">
+        <item>XS</item>
+        <item>S</item>
+        <item>M</item>
+        <item>L</item>
+        <item>XL</item>
+        <item>XXL</item>
+    </string-array>
+
+    <string-array name="colors_array">
+        <item>Black</item>
+        <item>White</item>
+        <item>Green</item>
+        <item>Pink</item>
+        <item>Blue</item>
+        <item>Red</item>
+    </string-array>
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "635412542168",
+    "firebase_url": "https://just-ideas-f2n35.firebaseio.com",
+    "project_id": "just-ideas-f2n35",
+    "storage_bucket": "just-ideas-f2n35.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635412542168:android:f21cf14b6b01c777baddad",
+        "android_client_info": {
+          "package_name": "com.example.justideas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635412542168-7q4n988156cv56pjr3e0jp9fggvoeq3f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.justideas",
+            "certificate_hash": "7fc25d3dc6f52f48c32a347d878e63a0b7f73e2b"
+          }
+        },
+        {
+          "client_id": "635412542168-85kce4qie8pbcul9vg85i1pgiverq8bj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7hPpblu-7jMP1dpbdvwlp4WFwN3uckow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "635412542168-85kce4qie8pbcul9vg85i1pgiverq8bj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
